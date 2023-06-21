@@ -18,12 +18,12 @@ options.forEach(element => {
             computer.classList.remove("shakeComputer");
             player.classList.remove("shakePlayer");
 
-            player.src = `${element.innerHTML}Player.png`;
+            player.src = `${ toLowerCase(element.innerHTML) }Player.png`;
 
             const choice = ["ROCK", "PAPER", "SCISSORS"];
             let array = Math.floor(Math.random()*3);
             let computerChoice=choice[array];
-            computer.src =`${computerChoice}Computer.png`;
+            computer.src =`${toLowerCase(computerChoice)}Computer.png`;
 
             let cScore=parseInt(computerScore.innerHTML);
             let pScore=parseInt(playerScore.innerHTML);
