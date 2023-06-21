@@ -1,0 +1,140 @@
+body{
+    background:rgb(112, 92, 66);
+    color: ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.message{
+    font-size: 1.6em;
+    margin:3.04em 0 2em ;
+    text-align: center;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+.computer img , .player img{
+    width: 85%;
+}
+
+.shakeComputer{
+    animation: shakecomputer 0.5s linear;
+
+}
+
+
+.shakePlayer{
+    animation: shakeplayer 0.5s linear;
+}
+
+.score{
+    margin: 5em ;
+    text-align: center;
+}
+
+.computerScore{
+    text-align: center;
+    padding-left: 3.04rem;
+}
+
+.playerScore{
+    text-align: center;
+    padding-right: 3.04rem;
+    
+}
+
+.options{
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.options button{
+    background: none;
+    color: white;
+    border: 1px solid cornsilk;
+    padding: 1em 2em;
+    border-radius: 7px;
+    width: 150px;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s all linear;
+}
+
+.options button:hover{
+    background-color:rgb(94, 65, 30);
+    border: 1.3px solid rgb(126, 95, 57);
+}
+
+@keyframes shakecomputer{
+    0%{
+        transform: rotate(-30deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform:rotate(-30deg)
+    }
+    75%{
+        transform: rotate(30deg);
+        
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+@keyframes shakeplayer{
+    0%{
+        transform: rotate(-30deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform:rotate(-30deg)
+    }
+    75%{
+        transform: rotate(30deg);
+        
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+/* @-webkit-keyframes shakecomputer {
+    0% { }
+    50% { transform: translatey(-20px); }
+    100% { }
+}
+@keyframes shakecomputer {
+    0% { }
+    50% { transform: translateY(-20px); }
+    100% { }
+}
+
+@-webkit-keyframes shakeplayer {
+    0% { }
+    50% { transform: translatey(-20px); }
+    100% { }
+}
+@keyframes shakeplayer {
+    0% { }
+    50% { transform: translateY(-20px); }
+    100% { }
+} */
+
+footer {
+    margin-top: 4.7%;
+    color:ghostwhite;
+    text-align: center;
+  
+  }
